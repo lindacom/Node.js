@@ -1,39 +1,9 @@
-MVC
-====
+Background to MVC
+==================
 1. Model - data - fetching, inserting into database. Model updates the view
 2. View - user interface - templates, html
 3. controller - directs traffic e.g button click triggers controller to load to a page, save to database etc. Controller manipulates the model e.g fetching data
 from database
-
-File structure
-===============
-Set up NMP for PHP in visual studio code
-In the directory create a folder for the project and add the following files:
-
-config.php
-index.php
-
-Classes folder:
-----------------
-Bootstrap.php
-Controller.php
-Model.php
-Messages.php
-
-controllers folder:
------------------------
-home.php
-shares.php
-users.php
-
-Models folder:
--------------
-home.php
-
-Views folder:
-----------------
-main.php
-
 
 Routes
 ========
