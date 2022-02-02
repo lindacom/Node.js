@@ -74,4 +74,5 @@ Documentation
   node.js frameworks:
   express - see http://expressjs.com
   socket.io - see https://socket.io
+    Jasmine - https://jasmine.github.io
 
