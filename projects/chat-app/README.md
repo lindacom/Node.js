@@ -13,3 +13,11 @@ Building a chat application
 11. Install socket.io - npm install -s socket.io
 12. To debug the application click he debug icon in VS code and click start debutting
 13. To test the application use a framework such as Jasmine
+
+Testing an application using Jasmine
+===================================
+1. install Jasmine - npm install --save -dev jasmine
+2. initialise Jasmine - ./node_module/.bin/jasmine init. a spec folder will be created
+3. go to the package.json file and in the script key chang the test key to "Jasmine"
+4. create a specification file (e.g. server.specs.js)
+5. in the terminal run npm test to run the test 
