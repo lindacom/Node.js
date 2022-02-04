@@ -27,3 +27,33 @@ Watches files for changes and reloads application
 1. Install nodemon - npm install -D nodemon
 2. in the scripts key of the package.json file enter a new key "dev" with the value "nodemon serverjs"
 3. To run nodemon in the commandline enter npm run dev
+
+Install EJS template engine
+===========================
+templates can be used for example header, navigation to create reusable areas for a webpage
+
+1. install EJS - npm install ejs
+2. in the server.js file use ejs to set the template:
+
+```
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, './views'));
+```
+3. Create a new folder called views. Create a subfolder called pages. Create an index.ejs file in the pages folder
+4. in the server.js file render the view:
+
+```
+app.get('/', (request, response) => {
+ response.render('pages/index', {pageTitle: 'Welcome'});
+});
+```
+5. In visual studio code install the EJS language support extension
+6. In the index.ejs file in the title tag enter 
+
+```
+  <title><%= pageTitle %></title>
+  ```
+
+Documentation
+===============
+EJS - ejs.co
