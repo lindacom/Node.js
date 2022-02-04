@@ -12,3 +12,6 @@ guide, json)
 Prettier
 ------------
 formatting conssistently
+
+1. install prettier - npm install -D prettier eslint-config-prettier eslint-plugin-prettier
+2. In visual studio code click the extensions icon and install ESLint and prettier
