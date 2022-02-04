@@ -50,4 +50,34 @@ N.b app.use is used to add middleware to the application. Middleware is required
 app.use(express.static(path.join(__dirname, './static')));
 ```
 
+Middleware
+=================
+
+1. routing middleware - e.g. app.get
+2. parameter routes - e.g. http:/localhost:3000/users/mary
+
+Express router
+===============
+express router lets you create sub applications that listen on spcific routes.  You can define middleware and routes
+
+```
+const express = require('express');
+
+const router = express.Router();
+
+router.get('/', (request, response) => {
+response.render('pages/index', { pageTitle: 'Welcome' });
+});
+
+module.exports = router;
+```
+
+1. In the routes/index.js file enter the above
+2. In the server.js file require the routes folder:
+
+```
+const routes = require('./routes');
+app.use('/', routes);
+```
+
 
