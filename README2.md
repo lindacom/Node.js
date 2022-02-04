@@ -41,3 +41,13 @@ app.listen(port, () => {
     console.log(`Express server listening on port ${port}!`);
 });
 ```
+
+serve both images and files:
+
+N.b app.use is used to add middleware to the application. Middleware is required to serve images from the folder.
+
+```
+app.use(express.static(path.join(__dirname, './static')));
+```
+
+
