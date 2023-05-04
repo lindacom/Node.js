@@ -2,8 +2,8 @@ Building a chat application
 =============================
 1. Open a project folder in VS code
 2. Install NPM - npm init --y this will create a package.json file. (N. you may first need to go to nodejs.org/en/download and download Node.js)
-3. install Express - npm install -s express this will save it to the package.json file under dependencies
-4. install express body parser - npm install -s body-parser when this is installed the console will be able to receive request body
+3. install Express - npm install -s express (this will save it to the package.json file under dependencies and create a node modules folder)
+4. install express body parser - npm install -s body-parser (when this is installed the console will be able to receive request body)
 5. create a server.js file to serve a static file(express.static)
 6. create an index.html file
 7. run nodemon server.js in the terminal
